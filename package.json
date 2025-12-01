@@ -1,0 +1,24 @@
+{
+  "name": "design-system-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A custom Design System Generator with beautiful UI",
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "clean": "turbo run clean",
+    "storybook": "turbo run storybook",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\""
+  },
+  "devDependencies": {
+    "prettier": "^3.1.0",
+    "turbo": "^1.11.0",
+    "typescript": "^5.3.3"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "packageManager": "npm@10.2.4"
+}

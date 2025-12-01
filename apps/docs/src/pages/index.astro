@@ -1,0 +1,141 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Button, Card, Input } from '@design-system/ui';
+---
+
+<Layout title="Design System Generator - Documentation">
+  <main class="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
+    <!-- Hero Section -->
+    <section class="py-20 px-4">
+      <div class="max-w-6xl mx-auto text-center">
+        <h1 class="text-6xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent mb-6">
+          Design System Generator
+        </h1>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-8">
+          Créez des design systems personnalisés et cohérents en quelques minutes. Générez automatiquement vos tokens, composants et documentation.
+        </p>
+        <div class="flex gap-4 justify-center">
+          <Button variant="primary" size="lg" client:load>
+            Commencer
+          </Button>
+          <Button variant="outline" size="lg" client:load>
+            Documentation
+          </Button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->}
+    <section class="py-16 px-4">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">
+          Fonctionnalités
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Card variant="elevated" padding="lg" client:load>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-3 text-gray-900">Génération Automatique</h3>
+              <p class="text-gray-600">
+                Générez automatiquement des palettes de couleurs, espacements et typographies cohérents.
+              </p>
+            </div>
+          </Card>
+
+          <Card variant="elevated" padding="lg" client:load>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-3 text-gray-900">Export Multi-Format</h3>
+              <p class="text-gray-600">
+                Exportez vers CSS Variables, Tailwind Config, ou JSON pour une intégration facile.
+              </p>
+            </div>
+          </Card>
+
+          <Card variant="elevated" padding="lg" client:load>
+            <div class="text-center">
+              <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg class="w-8 h-8 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                </svg>
+              </div>
+              <h3 class="text-xl font-semibold mb-3 text-gray-900">Composants Prêts</h3>
+              <p class="text-gray-600">
+                Bibliothèque de composants React avec Storybook pour une visualisation rapide.
+              </p>
+            </div>
+          </Card>
+        </div>
+      </div>
+    </section>
+
+    <!-- Components Demo Section -->}
+    <section class="py-16 px-4 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold text-center mb-12 text-gray-900">
+          Composants
+        </h2>
+        <div class="space-y-8">
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-900">Buttons</h3>
+            <div class="flex flex-wrap gap-4">
+              <Button variant="primary" client:load>Primary</Button>
+              <Button variant="secondary" client:load>Secondary</Button>
+              <Button variant="outline" client:load>Outline</Button>
+              <Button variant="ghost" client:load>Ghost</Button>
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-900">Inputs</h3>
+            <div class="max-w-md space-y-4">
+              <Input label="Email" placeholder="you@example.com" type="email" client:load />
+              <Input label="Password" placeholder="••••••••" type="password" helperText="Au moins 8 caractères" client:load />
+            </div>
+          </div>
+
+          <div class="bg-gray-50 p-8 rounded-xl">
+            <h3 class="text-2xl font-semibold mb-6 text-gray-900">Cards</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Card variant="elevated" padding="md" client:load>
+                <h4 class="font-semibold text-lg mb-2">Elevated Card</h4>
+                <p class="text-gray-600">Avec ombre portée</p>
+              </Card>
+              <Card variant="outlined" padding="md" client:load>
+                <h4 class="font-semibold text-lg mb-2">Outlined Card</h4>
+                <p class="text-gray-600">Avec bordure</p>
+              </Card>
+              <Card variant="filled" padding="md" client:load>
+                <h4 class="font-semibold text-lg mb-2">Filled Card</h4>
+                <p class="text-gray-600">Avec fond coloré</p>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->}
+    <section class="py-20 px-4">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-6 text-gray-900">
+          Prêt à créer votre Design System ?
+        </h2>
+        <p class="text-xl text-gray-600 mb-8">
+          Commencez dès maintenant et générez un design system professionnel en quelques minutes.
+        </p>
+        <Button variant="primary" size="lg" client:load>
+          Lancer le Générateur
+        </Button>
+      </div>
+    </section>
+  </main>
+</Layout>

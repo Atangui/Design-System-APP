@@ -2,7 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "npm run build --workspace=generator",
   "outputDirectory": "apps/generator/dist",
-  "devCommand": "cd apps/generator && npm run dev",
   "installCommand": "npm install",
   "framework": "vite",
   "rewrites": [

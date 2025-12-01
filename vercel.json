@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "npx turbo run build --filter=generator",
+  "buildCommand": "npm install && npm install --prefix apps/generator && npx turbo run build --filter=generator",
   "outputDirectory": "apps/generator/dist",
   "installCommand": "npm install",
   "framework": "vite",

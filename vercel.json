@@ -1,6 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "npx turbo run build --filter=docs --force",
+  "buildCommand": "rm -rf dist && npx turbo run build --filter=docs --force && cp -R apps/docs/dist dist",
   "outputDirectory": "dist",
   "installCommand": "npm ci",
   "framework": "astro"

@@ -420,7 +420,7 @@ Ce projet démontre :
 - ✅ Orchestration d'outils d'IA pour accélérer le développement
 - ✅ Capacité à créer des outils pour designers et développeurs
 
-💡 **Note :** Ce projet a été développé en utilisant l'IA (GitHub Copilot, Claude) comme assistants de développement, sous ma supervision technique et architecturale complète.
+💡 **Note :** Ce projet a été développé en co-utilisant l'IA comme assistants de développement, sous ma supervision technique et architecturale complète.
 
 **Approche :**
 - 🎯 **Architecture** : Conception humaine (stack, structure, flux)

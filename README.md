@@ -15,7 +15,7 @@ Une application web élégante permettant de créer rapidement un design system 
 <img width="1903" height="852" alt="image" src="https://github.com/user-attachments/assets/6fc1a4e1-ec19-48de-9dad-ee6717d15561" />
 
 
-[LIEN VERS LA DEMO](https://design-system-app-docs-charles-as-projects-18fcbc1c.vercel.app/)
+[LIEN VERS LA DEMO](https://design-system-app-docs.vercel.app/)
 
 ---
 
